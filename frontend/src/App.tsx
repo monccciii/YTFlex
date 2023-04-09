@@ -6,10 +6,11 @@ function App() {
   const [thumbnail, setThumbnail] = useState('');
   const [download, setDownload] = useState('');
   const [isWaiting, setIsWaiting] = useState<boolean>(false);
+  const url = process.env.REACT_APP_API;
   const handleProcessVideo = async () => {
     setIsWaiting(true);
     try {
-      const response = await fetch('http://localhost:5000/process_video', {
+      const response = await fetch(`${url}process_video`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
