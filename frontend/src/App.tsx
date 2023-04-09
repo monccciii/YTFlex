@@ -6,7 +6,7 @@ function App() {
   const [thumbnail, setThumbnail] = useState('');
   const [download, setDownload] = useState('');
   const [isWaiting, setIsWaiting] = useState<boolean>(false);
-  const url = "spikeee.pythonanywhere.com";
+  const url = "http://spikeee.pythonanywhere.com";
   const handleProcessVideo = async () => {
     setIsWaiting(true);
     try {
