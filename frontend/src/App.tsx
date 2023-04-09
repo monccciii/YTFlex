@@ -6,7 +6,7 @@ function App() {
   const [thumbnail, setThumbnail] = useState('');
   const [download, setDownload] = useState('');
   const [isWaiting, setIsWaiting] = useState<boolean>(false);
-  const url = process.env.REACT_APP_API;
+  const url = "spikeee.pythonanywhere.com";
   const handleProcessVideo = async () => {
     setIsWaiting(true);
     try {
@@ -43,7 +43,7 @@ function App() {
           <img src={phoneimg} alt="Phone" className="w-full max-w-md" />
           <div className="text-center">
             <a href="#getstartto" className="bg-indigo-600 text-xl px-8 py-3 rounded text-white font-semibold transition duration-200 hover:bg-indigo-700 ">Get Started!</a>
-            <p className="mt-5 text-black text-lg font-semibold">Follow these simple steps to download videos:</p>
+            <p className="mt-5 text-gray-600 text-lg font-semibold">Follow these simple steps to download videos:</p>
           </div>
         </div>
       </section>
