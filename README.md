@@ -5,7 +5,7 @@ Use YTFlex to download your videos in seconds.
 
 Technologies used:
 - Vite + SWC
-- React
-- Flask
+- __React__
+- __Flask__
 - PyTube
 - Typescript
