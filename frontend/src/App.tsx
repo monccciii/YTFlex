@@ -10,7 +10,7 @@ function App() {
   const handleProcessVideo = async () => {
     setIsWaiting(true);
     try {
-      const response = await fetch(`${url}process_video`, {
+      const response = await fetch(`${url}/process_video`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
