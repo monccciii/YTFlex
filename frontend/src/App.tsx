@@ -6,11 +6,10 @@ function App() {
   const [thumbnail, setThumbnail] = useState('');
   const [download, setDownload] = useState('');
   const [isWaiting, setIsWaiting] = useState<boolean>(false);
-  const url = "https://spikeee.pythonanywhere.com";
   const handleProcessVideo = async () => {
     setIsWaiting(true);
     try {
-      const response = await fetch(`${url}/process_video`, {
+      const response = await fetch(`https://n6g4fxhenh.execute-api.us-east-1.amazonaws.com/dev/process_video`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
